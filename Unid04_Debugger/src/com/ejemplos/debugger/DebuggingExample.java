@@ -52,5 +52,13 @@ public class DebuggingExample {
     public double calculateAverageLetters(List<String> names, int totalLetters) {
         return names.isEmpty() ? 0 : (double) totalLetters / names.size(); // Set a breakpoint and use 'Evaluate Expression' here
     }
+    
+    //Se añade un método de consulta para imprimir en mayúsculas
+     //Imprime todos los nombres de la lista en letras mayúsculas
+    public void printNamesUppercase(List<String> names) {
+        for (String name : names) {
+            System.out.println(name.toUpperCase());
+        }
+    }
 
 }
